@@ -23,10 +23,7 @@ class ReadOnlyUser(HttpUser):
 
 
 class WriteHeavyUser(HttpUser):
-    """
-    Simulates a user that mainly creates content (POST).
-    Useful to stress write operations.
-    """
+
     wait_time = between(2, 5)
 
     @task(4)
