@@ -1,0 +1,12 @@
+target_host: "https://jsonplaceholder.typicode.com"
+
+load_profile:
+  users: 50          # number of simulated users
+  spawn_rate: 5      # users per second
+  run_time: "1m"     # for local runs with --run-time
+
+endpoints:
+  get_posts: "/posts"
+  get_post: "/posts/1"
+  get_users: "/users"
+  create_post: "/posts"
